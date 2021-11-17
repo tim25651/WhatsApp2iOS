@@ -5,9 +5,9 @@ As part of the process the iPhone has to be back upped and restored again.
 Thus, the earlier in the setting up of the iPhone the more convenient.
 
 ## Prerequisites
-- An unencryped message database (Skip #2 and #3),
-- or python/conda, an encrypted message database and your WhatsApp key file (Skip #2),
-- or a rooted Android phone with activated USB debugging and ADB
+- An unencryped message database (Skip #2 and #3),  
+  or python/conda, an encrypted message database and your WhatsApp key file (Skip #2),  
+  or a rooted Android phone with activated USB debugging and ADB
 
 - Conda or Python with pip
 - XCode
