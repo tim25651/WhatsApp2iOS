@@ -94,3 +94,6 @@ watoi/build/Release/watoi msgstore.db ./ChatStorage.sqlite app/Payload/WhatsApp.
 Restore the backup with the Apple Configurator:  
 Select your iPhone under Unsupervised, and select Actions -> Restore from Backup -> Choose the backup with the earlier remembered creation time  
 After the restoring process has finished, reinstall WhatsApp and login with the same phone number
+
+## Credits
+Thanks to ElDavoo and residentsummer for the underlying repositories
