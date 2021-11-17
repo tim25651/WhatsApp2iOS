@@ -2,7 +2,7 @@
 This tutorial should help you to move your WhatsApp messages
 from a Android phone to 
 As part of the process the iPhone has to be back upped and restored again.
-Thus, the earlier in the setting up of the iPhone the more convenient.
+Thus, the earlier in the setting up of the iPhone your are transfering WhatsApp the more convenient it is.
 
 ## Prerequisites
 - An unencryped message database (Skip #2 and #3),  
