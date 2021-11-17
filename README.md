@@ -1,7 +1,7 @@
 # WhatsApp2iOS
 This tutorial should help you to move your WhatsApp messages
 from an Android phone to an iPhone.  
-In this method, the iPhone has to be backed up and restored again and all apps are deleted
+In this method based on a .crypt14 decryptor by [ElDavoo](https://github.com/ElDavoo/WhatsApp-Crypt14-Decrypter) and the actual migration tool by [residentsummer](https://github.com/residentsummer/watoi), the iPhone has to be backed up and restored again and all apps are deleted
 during the process. Thus, the earlier in the setting up of the iPhone your are transfering WhatsApp the more convenient it is.
 
 ## Prerequisites
