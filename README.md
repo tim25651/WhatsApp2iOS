@@ -55,13 +55,16 @@ python WhatsApp-Crypt14-Decrypter/decrypt14.py key msgstore.db.crypt14 msgstore.
 ```
 
 4. Prepare iPhone
-Install WhatsApp from iPhone from the Appstore
-Activate with the same phone number
+Install WhatsApp from iPhone from the App Store, and activate with the same phone number as the Android phone
 You should see now a list of all of your group chats
 Create a backup with for example the Apple Configurator 2:
-Select your iPhone under Unsupervised, and select Actions -> Backup (Remember the creation time)
+```
+Select your iPhone under Unsupervised, and select Actions -> Backup (Remember the creation time
+```
 Give your terminal app full storage access:
+```
 Command+Space -> Spotlight -> "Security & Privacy" -> Privacy -> Full Disk Access -> Check iTerm (e.g.)
+```
 Show all iPhone backups, store the ID of the created backup in a variable and create a safety backup:
 ```
 cd $WA2IOS
@@ -83,16 +86,18 @@ cp $ORIGINALS/ChatStorage.sqlite ./ChatStorage.sqlite
 
 6. Patch the backup folder
 Get the CoreData files from the .ipa file, build the WATOI Patcher and run the migration:
-´´´
+```
 cd $WA2IOS
 unzip ~/Download/WhatsApp_x.x.x.ipa -d app
 cd $WA2IOS/watoi
 xcodebuild -project watoi.xcodeproj -target watoi
 cd ..
 watoi/build/Release/watoi msgstore.db ./ChatStorage.sqlite app/Payload/WhatsApp.app/Frameworks/Core.framework/WhatsAppChat.momd
-´´´
+```
 
 7. Restore the backup
 Restore the backup with the Apple Configurator:
+```
 Select your iPhone under Unsupervised, and select Actions -> Restore from Backup -> Choose the backup with the earlier remembered creation time
+
 After the restoring process has finished, reinstall WhatsApp and login with the same phone number
