@@ -30,7 +30,8 @@ git clone https://github.com/residentsummer/watoi
 2. Retrieve the data from your source device  
 Extract the encryption key from /data/data/com.whatsapp/files/key with:
 ```
-adb -d shell "su; cat data/data/com.whatsapp/files/key"> $W2IOS/key
+adb root
+adb -d shell "cat data/data/com.whatsapp/files/key" > $W2IOS/key
 ```
 Pull the latest message database from WhatsApp
 ```
@@ -40,12 +41,12 @@ adb pull /sdcard/Android/media/com.whatsapp/WhatsApp/Databases/msgstore.db.crypt
 3. Decrypt WhatsApp database  
 Set up the python environment with conda:
 ```
-conda create -n wa2ios pycrypt pycryptdome
+conda create -n wa2ios pycrypto pycryptodome
 conda activate wa2ios
 ```
 or with pip:
 ```
-pip install pycrypt pycryptdome
+pip install pycrypto pycryptodome
 ```
 Decrypt the .crypt14 file
 ```
@@ -85,8 +86,7 @@ Get the CoreData files from the .ipa file, build the WATOI Patcher and run the m
 cd $WA2IOS
 unzip ~/Download/WhatsApp_x.x.x.ipa -d app
 cd $WA2IOS/watoi
-xcodebuild -project watoi.xcodeproj -target watoi
-cd ..
+xcodebuild -project watoi/watoi.xcodeproj -target watoi
 watoi/build/Release/watoi msgstore.db ./ChatStorage.sqlite app/Payload/WhatsApp.app/Frameworks/Core.framework/WhatsAppChat.momd
 ```
 
