@@ -19,6 +19,7 @@ Thus, the earlier in the setting up of the iPhone the more convenient.
 
 1. Prepare workspace  
 ```
+mkdir WhatsApp2iOS
 export WA2IOS=$(PWD)/WhatsApp2iOS
 cd $WA2IOS
 git clone https://github.com/ElDavoo/WhatsApp-Crypt14-Decrypter
